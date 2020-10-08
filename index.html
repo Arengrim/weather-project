@@ -1,11 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>hello git</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/98aabe2c8b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="src/style.css" />
+
+  <title>🌤 Weather</title>
+</head>
+
+<body>
+
+  <div class="search">
+    <form id="citySearch">
+      <input class="bar" type="search" id="cityName" />
+      <input class="button" type="submit" value="Search" id="buttonSearch" />
+      <input class="button" type="submit" value="Location" id="locationNow" />
+
+    </form>
+  </div>
+
+  <div class="map">
+    <img src="media /world_connection_.png" width="700" height="320" />
+  </div>
+  </div>
+  <h1 id="place">
+
+  </h1>
+  <p id="today">
+    Friday, 1 September 2020
+  </p>
+  </h1>
+  <div class="current-weather">
+    <i class="fas fa-cloud"></i>
+    <h2>
+      <span id="tempToday"> </span>
+
+
+    </h2>
+  </div>
+  <div class="now">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <p id="precipitation">
+            Precipitation </p>
+          </br>
+          <p>
+            30%
+          </p>
+        </div>
+        <div class="col-3">
+          <p id="wind">Wind </p>
+          </br>
+          <p>
+            5 km/hr
+          </p>
+        </div>
+        <div class="col-3">
+          <p>
+            Humidity </p>
+          </br>
+          <p>
+            46%
+          </p>
+        </div>
+        <div class="col-3">
+          <p>
+            Fells like</p>
+          </br>
+          <p>
+            28ºC
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="sun">
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          Sunrise
+          </br>
+          <div class="surise">
+            <i class="far fa-sun"></i>
+          </div>
+          </br>
+          <p>7:00 AM </p>
+        </div>
+        <div class="col-6">
+          Sunset
+          </br>
+          <div class="sunset">
+            <i class="far fa-moon"></i>
+          </div>
+          </br>
+          <p>8:00 PM </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="forecast">
+    <h2>
+      Forecast
+    </h2>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p> Sunday
+            </br>
+          <div class="light">
+            <i class="far fa-sun"></i>
+          </div>
+          </br>
+          28ºC
+          </p>
+        </div>
+        <div class="col">
+          <p>Monday
+            </br>
+          <div class="cloud">
+            <i class="fas fa-cloud"></i>
+          </div>
+          </br>
+          26ºC
+          </p>
+        </div>
+        <div class="col">
+          <p>Tuesday
+            </br>
+          <div class="cloud">
+            <i class="fas fa-cloud"></i>
+          </div>
+          </br>
+          25ºC
+          </p>
+        </div>
+        <div class="col">
+          <p>Wednesday
+            </br>
+          <div class="light">
+            <i class="far fa-sun"></i>
+          </div>
+          </br>
+          29ºC
+          </p>
+        </div>
+        <div class="col">
+          <p>Thursday
+            </br>
+          <div class="light">
+            <i class="far fa-sun"></i>
+          </div>
+          </br>
+          30ºC
+          </p>
+        </div>
+        <div class="col">
+          <p>Friday
+            </br>
+          <div class="rain">
+            <i class="fas fa-cloud-showers-heavy"></i>
+          </div>
+          </br>
+          26ºC
+          </p>
+        </div>
+        <div class="col">
+          <p> Saturday
+            </br>
+          <div class="rain">
+            <i class="fas fa-cloud-showers-heavy"></i>
+          </div>
+          </br>
+          24ºC
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      Coded by Darya Freiheit
+    </footer>
+    <script src="script.js"></script>
+</body>
+
 </html>

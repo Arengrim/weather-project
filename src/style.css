@@ -162,8 +162,6 @@ footer {
 }
 a {
   font-family: monospace;
-  color: rgba(255, 255, 255, 0.4);
-  position: relative;
   top: 80px;
   left: 500px;
   text-align: left;
